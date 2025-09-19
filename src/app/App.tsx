@@ -1,15 +1,11 @@
-import { useState } from 'react'
+import { AppRoutes } from "./routes/Routes"
+import GlobalStyle from "./styles/GlobalStyle"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export const App = ()=> {
   return (
     <>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <GlobalStyle/>
+      <AppRoutes/>
     </>
   )
 }
-
-export default App
